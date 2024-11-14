@@ -1,0 +1,38 @@
+/* Wordle-style grid */
+.wordle-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Space between rows */
+    margin-bottom: 20px;
+}
+
+.grid-row {
+    display: flex;
+    gap: 8px; /* Space between cells in each row */
+}
+
+.grid-cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #333; /* Darker border color */
+    background-color: #1a1a1a; /* Dark background for each cell */
+    color: white; /* Letter color */
+    box-sizing: border-box;
+}
+
+.grid-cell.green {
+    background-color: #6aaa64; /* Correct letter in correct position */
+}
+
+.grid-cell.yellow {
+    background-color: #c9b458; /* Correct letter in wrong position */
+}
+
+.grid-cell.grey {
+    background-color: #787c7e; /* Incorrect letter */
+}
